@@ -1,7 +1,12 @@
 import java.io.*;
 import java.net.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ProxyMain {
+    public static String nameLog;
+
     public static void main(String[] args)throws IOException{
         boolean listener= true;
         ServerSocket serverSocket = null;
@@ -13,7 +18,10 @@ public class ProxyMain {
         }
         try{
             serverSocket = new ServerSocket(port);
-            ProxyThread.createFile("LogFile.txt");
+            Date date = new Date();
+            DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy");
+            nameLog="LogFile_"+dateFormat.format(date)+".txt";
+            ProxyThread.createFile(nameLog);
             ProxyThread.writeOnFile("Starting on Port: " + port);
 
         }catch(IOException e){

@@ -133,7 +133,7 @@ public class ProxyThread extends Thread {
     }
 
     protected static void writeOnFile(String output) {
-        Path path = Paths.get("LogFile.txt");
+        Path path = Paths.get(ProxyMain.nameLog);
         try (BufferedWriter br = Files.newBufferedWriter(path,
                 Charset.defaultCharset(), StandardOpenOption.APPEND)) {
                 try {
