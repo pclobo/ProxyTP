@@ -3,10 +3,10 @@
 El presente es un software proxy http cuyo objetivo es capturar el tráfico HTTP
 y loguearlo siempre y cuando el usuario haya configurado el proxy en el
 navegador(Chrome o Firefox).
-Dentro del programa se encuentra configurado para que el proxy escuche por el puerto 
-9800, una vez ejecutado el software accederá a la función run cuyo objetivo es
-obtener el request del usuario y enviarlo al servidor mientras va guardando informacion
-en una archivo llamado "LogFile_dd_mm_yyyy.txt", se le agrega la fecha para que guarde
+Dentro del programa se crea un Socket para que escuche en el puerto 
+9800, una vez ejecutado el software creará un thread que permitirá accedeer a la función 
+run cuyo objetivo es obtener el request del usuario y enviarlo al servidor mientras va guardando 
+informacion en una archivo llamado "LogFile_dd_mm_yyyy.txt", se le agrega la fecha para que guarde
 información por día, luego obtiene la respuesta del servidor, la guarda en el mismo
 archivo de log y envía la respuesta al usuario.
 Para ser utilizado el programa, se debe descargar el archivo "AIT2018.jar" que se encuentra
