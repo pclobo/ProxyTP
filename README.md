@@ -14,12 +14,14 @@ en éste proyecto dentro de la carpeta "out/artifacts/AIT2018_jar".
 Ingresar por consola a la carpeta en la que fue descargado el archivo .jar y 
 ejecutar el siguiente comando "java -jar ./AIT2018.jar".
 Tambien se requiere la configuración correspondiente en el navegador a utilizar:
+
 -FireFox:
 Dirigirse a Opciones->Preferencias->
 Al final de la ventana aparecerá un titulo "Proxy de Red" seleccionar "Configuración".
 tildar la opción "Configuración Manual del Proxy" 
 Ingresar en Proxy HTTP "localhost" y en Puerto "9800" 
 Seleccionar Aceptar.
+
 -Google Chrome:
 en MacOS dirigirse a Preferencias del Sistema y seleccionar
 en la parte inferior derecha donde dice "Avanzado..." se abrirá una nueva ventana
